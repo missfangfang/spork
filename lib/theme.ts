@@ -9,11 +9,8 @@ const theme = createTheme({
   palette: {
     primary: {
       main: '#b6cd84',
-      // contrastText: '#ffffff',
+      // TODO: May need to use contrastText: '#ffffff',
     },
-    // secondary: {
-    //   main: '#75a47f',
-    // }
   }
 });
 
