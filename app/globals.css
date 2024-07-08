@@ -3,50 +3,50 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'NewYorkMedium-Regular';
-    src: url('../public/fonts/NewYorkMedium-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'NewYorkMedium-Regular';
+  src: url('../public/fonts/NewYorkMedium-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'NewYorkMedium-RegularItalic';
-    src: url('../public/fonts/NewYorkMedium-RegularItalic.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'NewYorkMedium-RegularItalic';
+  src: url('../public/fonts/NewYorkMedium-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'NewYorkMedium-Bold';
-    src: url('../public/fonts/NewYorkMedium-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'NewYorkMedium-Bold';
+  src: url('../public/fonts/NewYorkMedium-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'NewYorkMedium-BoldItalic';
-    src: url('../public/fonts/NewYorkMedium-BoldItalic.woff2') format('woff2');
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'NewYorkMedium-BoldItalic';
+  src: url('../public/fonts/NewYorkMedium-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }
 
 @layer base {
-    body {
-        @apply font-md-reg;
-        @apply text-base;
-        @apply text-black;
-    }
+  body {
+    @apply font-md-reg;
+    @apply text-base;
+    @apply text-black;
+  }
 }
 
 :root {
-    --font-new-york-medium-regular: 'NewYorkMedium-Regular';
-    --font-new-york-medium-regular-italic: 'NewYorkMedium-RegularItalic';
-    --font-new-york-medium-bold: 'NewYorkMedium-Bold';
-    --font-new-york-medium-bold-italic: 'NewYorkMedium-BoldItalic';
+  --font-new-york-medium-regular: 'NewYorkMedium-Regular';
+  --font-new-york-medium-regular-italic: 'NewYorkMedium-RegularItalic';
+  --font-new-york-medium-bold: 'NewYorkMedium-Bold';
+  --font-new-york-medium-bold-italic: 'NewYorkMedium-BoldItalic';
 
-    --color-primary: #b6cd84;
+  --color-primary: #b6cd84;
 }

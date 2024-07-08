@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import React from "react";
-import { TextField, ThemeProvider } from "@mui/material";
+import React from 'react';
+import { TextField, ThemeProvider } from '@mui/material';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
@@ -19,17 +19,21 @@ function PageClient() {
     setShowPassword((show) => !show);
   }
 
-  function handleMouseDownPassword(event: React.MouseEvent<HTMLButtonElement>): void {
+  function handleMouseDownPassword(
+    event: React.MouseEvent<HTMLButtonElement>
+  ): void {
     event.preventDefault();
   }
 
   return (
     <ThemeProvider theme={theme}>
-      <main className="flex flex-row min-h-screen min-w-screen bg-white">
-        <div className="bg-green w-1/2"/>
+      <main className="min-w-screen flex min-h-screen flex-row bg-white">
+        <div className="w-1/2 bg-green" />
         <div className="w-1/2 px-44 py-40 text-center">
-          <div className="font-md-bold text-green text-3xl">Spork</div>
-          <div className="font-md-reg-italic text-gray-600 mt-2 mb-8">Say goodbye to recipe guesswork</div>
+          <div className="font-md-bold text-3xl text-green">Spork</div>
+          <div className="mb-8 mt-2 font-md-reg-italic text-gray-600">
+            Say goodbye to recipe guesswork
+          </div>
           <div className="flex flex-col">
             <TextField
               label="Email"
@@ -54,12 +58,12 @@ function PageClient() {
             <FormControl
               variant="outlined"
               size="medium"
-              className="mt-4 mb-1"
+              className="mb-1 mt-4"
               sx={{
                 '& .MuiOutlinedInput-root': {
                   '& fieldset': {
                     borderColor: theme.palette.primary.main,
-                    borderWidth: '2px'
+                    borderWidth: '2px',
                   },
                   '&:hover fieldset': {
                     borderColor: '#B99470',
@@ -67,10 +71,12 @@ function PageClient() {
                   '&.Mui-focused fieldset': {
                     borderColor: theme.palette.primary.main,
                   },
-                }
+                },
               }}
             >
-              <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+              <InputLabel htmlFor="outlined-adornment-password">
+                Password
+              </InputLabel>
               <OutlinedInput
                 id="outlined-adornment-password"
                 type={showPassword ? 'text' : 'password'}
@@ -83,7 +89,7 @@ function PageClient() {
                       edge="end"
                       color="primary"
                     >
-                      {showPassword ? <VisibilityOff/> : <Visibility/>}
+                      {showPassword ? <VisibilityOff /> : <Visibility />}
                     </IconButton>
                   </InputAdornment>
                 }
@@ -95,7 +101,7 @@ function PageClient() {
               variant="contained"
               size="large"
               disableElevation
-              className="my-4 text-base h-12"
+              className="my-4 h-12 text-base"
               sx={{
                 color: '#ffffff',
                 textTransform: 'capitalize',
@@ -109,12 +115,12 @@ function PageClient() {
           </div>
           <div className="text-center">
             Don&apos;t have an account?
-            <span className="text-green font-md-bold pl-1">Sign up</span>
+            <span className="pl-1 font-md-bold text-green">Sign up</span>
           </div>
         </div>
       </main>
     </ThemeProvider>
-  )
+  );
 }
 
 export default PageClient;
